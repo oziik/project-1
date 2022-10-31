@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css" media="screen" title="no title">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+
+</head>
+
+<body>
+  <div class="login">
+
+    <div class="avatar">
+      <i class="fa fa-user"></i>
+    </div>
+
+    <h2>MOVLIX</h2>
+
+    <div class="box-login">
+      <i class="fas fa-envelope-open-text"></i>
+      <input type="text" placeholder="username" id="username">
+    </div>
+
+    <div class="box-login">
+      <i class="fas fa-lock"></i>
+      <input type="password" placeholder="Password" id="password">
+    </div>
+
+    <button type="submit" name="login" class="btn-login" onclick="login()"> Login</button>
+    <div class="bottom">
+      <a href="#">Register</a>
+      <a href="#">Forgot Password</a>
+    </div>
+  </div>
+
+  <script lang="javascript">
+    function login() {
+      var user = document.getElementById("username").value;
+      var pass = document.getElementById("password").value;
+
+      if (user == "oziik" && pass == "1234") {
+        window.location.href = "main.html"
+      } else {
+        alert("password anda salah");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
